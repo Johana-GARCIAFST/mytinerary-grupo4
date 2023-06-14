@@ -1,6 +1,6 @@
 import './App.css';
-import './carrousel.jsx';
-import Carrousel from './carrousel.jsx';
+import './componentes/carrousel.jsx';
+import Carrousel from './componentes/carrousel.jsx';
 function App() {
   return (
     <div className="App">
