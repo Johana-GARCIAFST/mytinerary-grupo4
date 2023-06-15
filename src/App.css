@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.navbar
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -25,7 +28,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #68dcfc;
 }
 
 @keyframes App-logo-spin {
