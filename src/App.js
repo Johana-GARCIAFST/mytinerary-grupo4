@@ -1,6 +1,6 @@
 import './App.css';
 import Carrousel from './componentes/carrousel.jsx';
-import NavBar from './componentes/navbar.jsx';
+import NavBar from './componentes/NavBar.jsx';
 function App() {
   return (
     <div className="App">
