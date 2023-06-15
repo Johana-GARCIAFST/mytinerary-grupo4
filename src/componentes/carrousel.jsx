@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "../index.css"
 import "../carrousel.css";
 
-// import required modules
+// import required modules.
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Carrousel() {
