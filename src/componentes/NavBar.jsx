@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import '../img/logoItinerary1.png'
+import logo from '../img/logoItinerary1.png'
 
 const pages = ['Home' , 'About Us','Cities','Contacts'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -40,13 +40,13 @@ function NavBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <img
-            src='../img/logoItinerary1.png'
+            src={logo}
             alt=""
             style={{
               display: { xs: 'none', md: 'flex' },
               marginRight: '1rem',
-              height: '24px',
-              width: '24px',
+              height: '70px',
+              width: '150px',
             }}
           />
           <Typography
