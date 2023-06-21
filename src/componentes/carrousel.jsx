@@ -10,14 +10,6 @@ import "../index.css"
 import "../carrousel.css";
 // import required modules.
 import { Autoplay, Pagination, Navigation } from "swiper";
-// let Rome="https://firebasestorage.googleapis.com/v0/b/challenge-5ac03.appspot.com/o/romaX.jpg?alt=media&token=b0d7e541-feab-4155-8f94-3bd50ea7526e"
-// let Paris= "https://firebasestorage.googleapis.com/v0/b/challenge-5ac03.appspot.com/o/parisZ.jpg?alt=media&token=00805f27-3f8d-4fbd-a5d6-0d2d5a341eee"
-// let NewYork = "https://firebasestorage.googleapis.com/v0/b/challenge-5ac03.appspot.com/o/empirestateZ.jpg?alt=media&token=e39ff108-3f88-4021-b120-99ae2544ace4"
-
-
-
-
-
 
 
 export default function Carrousel() {

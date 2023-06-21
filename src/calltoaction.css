@@ -1,0 +1,190 @@
+.pin {
+    color: red;
+    width: 50px;
+    height: 50px;
+    border-color: black;
+  }
+  
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+  
+  .animating {
+    animation: jump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate, spin 2s linear infinite;
+  }
+  
+  .css-i4bv87-MuiSvgIcon-root {
+    font-size: 3.5rem !important;
+  }
+  .Hero{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+  .Slogan{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 60px;
+  }
+  .HeroText{
+    font-size: 35px;
+    font-family: 'Lobster';
+    font-style: italic;
+    font-style: oblique;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 2px black;
+    
+  }
+  .CallToAction{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .Call{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster';
+    color: rgb(249, 249, 249);
+    text-shadow: 1px 1px 3px rgb(27, 27, 27);
+  }
+  .icon-animating {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(0.75);
+    }
+    0% {
+      transform: scale(1);
+    }
+  }
+  @media (max-width: 768px) {
+    .pin {
+        width: 20px;
+        height: 20px;
+      }
+    @keyframes jump {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(720deg);
+      }
+    }
+    
+    .animating {
+      animation: jump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite alternate, spin 2s linear infinite;
+    }
+    
+    .css-i4bv87-MuiSvgIcon-root {
+      font-size: 3rem !important;
+    }
+    
+    .Hero {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .Slogan {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+    }
+    
+    .HeroText {
+      font-size: 25px;
+      font-family: 'Lobster';
+      font-style: italic;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      text-shadow: 3px 1px 2px black;
+      width: 60%;
+      margin: 5%;
+    }
+    
+    .CallToAction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .Call {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Lobster';
+      color: rgb(249, 249, 249);
+      text-shadow: 1px 1px 3px rgb(27, 27, 27);
+    }
+    
+    .icon-animating {
+      animation-name: pulse;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(0.75);
+      }
+      100% {
+        transform: scale(0.5);
+      }
+      50% {
+        transform: scale(0.75);
+      }
+      0% {
+        transform: scale(1);
+      }
+    }
+    
+  }
