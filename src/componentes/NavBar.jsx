@@ -11,7 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import '../img/logoItinerary1.png'
 
 const pages = ['Home' , 'About Us','Cities','Contacts'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -39,7 +39,16 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <img
+            src='../img/logoItinerary1.png'
+            alt=""
+            style={{
+              display: { xs: 'none', md: 'flex' },
+              marginRight: '1rem',
+              height: '24px',
+              width: '24px',
+            }}
+          />
           <Typography
             variant="h6"
             noWrap
@@ -55,7 +64,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Mytinerary
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,7 +103,7 @@ function NavBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+        
           <Typography
             variant="h5"
             noWrap
