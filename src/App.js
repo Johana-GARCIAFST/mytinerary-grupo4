@@ -1,14 +1,17 @@
 import './App.css';
-import CallToAction from './componentes/CallToAction';
-import Carrousel from './componentes/carrousel.jsx';
+import Home from './componentes/home';
 import Footer from './componentes/Footer';
 import NavBar from './componentes/NavBar.jsx';
+import Cities from './componentes/Cities';
+import {Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <CallToAction/>
-      <Carrousel/>
+      <Routes>
+        <Route path='/Home' element={<Home/>}> </Route>
+        <Route path='/Cities' element={<Cities/>}> </Route>  
+        </Routes>
       <Footer/>
     </div>
   );

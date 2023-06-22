@@ -12,11 +12,15 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import {Link as LinkRouter} from 'react-router-dom'
+import Logo from '../img/logoItinerary (1).png'
 
-const pages = ['Home' , 'About Us','Cities','Contacts'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
 
 function NavBar() {
+  const pages = [{name:'Home', path:'./Home'}, { name:'About Us', path:'./Nosotros'}, { name:'Cities', path:'./Cities'}, {name:'Contacts', path:'./Contacs'}];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -55,7 +59,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            My Itinerary
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -88,9 +92,11 @@ function NavBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                
+               <LinkRouter to={page.path}> <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
+                </LinkRouter>
               ))}
             </Menu>
           </Box>
@@ -115,13 +121,14 @@ function NavBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+            <LinkRouter to={page.path}>  <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
+              </LinkRouter>
             ))}
           </Box>
 
