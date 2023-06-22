@@ -64,14 +64,18 @@
     font-size: 25px;
     font-weight: bold;
     font-family: 'Lobster';
-    color: rgb(249, 249, 249);
+    color: rgb(252, 251, 251);
     text-shadow: 1px 1px 3px rgb(27, 27, 27);
   }
   .icon-animating {
+    cursor: pointer;
     animation-name: pulse;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+  }
+  .callto{
+    cursor: pointer;
   }
   
   @keyframes pulse {

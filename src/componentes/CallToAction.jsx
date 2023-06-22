@@ -3,6 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AdsClickIcon from '@mui/icons-material/AdsClick';
 import BackgroundHero from "../img/Background.jpg";
 import "../calltoaction.css"
+import {Link as LinkRouter} from 'react-router-dom'
 
 const CallToAction = () => {
   const [isAnimating, setIsAnimating] = useState(false);
@@ -33,8 +34,8 @@ const CallToAction = () => {
       </div>
       <div className='CallToAction'>
         <div className="Call">Start planning your trip here!</div>
-        <div className={`${isAnimating ? 'icon-animating' : ''}`}>
-          <AdsClickIcon />
+        <div className={`${isAnimating ? 'icon-animating' : 'callto'}`} >
+        <LinkRouter to={'/Cities'}> <AdsClickIcon /> </LinkRouter>
         </div>
       </div>
     </div>

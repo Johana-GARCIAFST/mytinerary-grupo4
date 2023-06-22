@@ -10,11 +10,12 @@ function App() {
       <NavBar/>
       <Routes>
         <Route path='/Home' element={<Home/>}> </Route>
-        <Route path='/Cities' element={<Cities/>}> </Route>  
+        <Route path='/Cities' element={<Cities/>}></Route> 
+        <Route path='*' element={<Cities/>}></Route> 
         </Routes>
       <Footer/>
     </div>
-  );
+  ); 
 }
 
 export default App;
