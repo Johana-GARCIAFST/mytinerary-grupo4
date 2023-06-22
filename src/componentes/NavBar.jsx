@@ -13,7 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link as LinkRouter} from 'react-router-dom'
-import Logo from '../img/logoItinerary (1).png'
+import logo from '../img/logoItinerary (1).png'
+
 
 
 
@@ -43,7 +44,17 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+        <img
+            src={logo}
+            alt=""
+            style={{
+              display: { xs: 'none', md: 'flex' },
+              marginRight: '1rem',
+              height: '70px',
+              width: '150px',
+            }}
+          />
+        
           <Typography
             variant="h6"
             noWrap
@@ -59,7 +70,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
               textDecoration: 'none',
             }}
           >
-            My Itinerary
+            Mytinerary
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
