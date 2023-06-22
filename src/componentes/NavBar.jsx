@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link as LinkRouter} from 'react-router-dom'
-import logo from '../img/logoItinerary (1).png'
+import logo from '../img/logoItinerary1.png'
 
 
 
@@ -70,7 +70,6 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
               textDecoration: 'none',
             }}
           >
-            Mytinerary
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
