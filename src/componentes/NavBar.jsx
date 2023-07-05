@@ -10,10 +10,10 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import MenuItem from '@mui/material/MenuItem';                                                                                                                                        
 import {Link as LinkRouter} from 'react-router-dom'
 import logo from '../img/logoItinerary1.png'
+import '../App.css'
 
 
 
@@ -41,7 +41,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
   };
 
   return (
-    <AppBar position="static">
+    <AppBar className='appbar' position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <img
@@ -103,14 +103,13 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
             >
               {pages.map((page) => (
                 
-               <LinkRouter to={page.path}> <MenuItem key={page} onClick={handleCloseNavMenu}>
+               <LinkRouter to={page.path}> <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
                 </LinkRouter>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -127,12 +126,12 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
               textDecoration: 'none',
             }}
           >
-            LOGO
+            
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
             <LinkRouter to={page.path}>  <Button
-                key={page}
+                key={page.name}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >

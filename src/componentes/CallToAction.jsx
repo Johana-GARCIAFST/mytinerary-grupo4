@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AdsClickIcon from '@mui/icons-material/AdsClick';
 import BackgroundHero from "../img/Background.jpg";
 import "../calltoaction.css"
@@ -25,11 +24,11 @@ const CallToAction = () => {
     <div className="Hero" style={{ backgroundImage: `url(${BackgroundHero})` }}>
       <div className='Slogan'>
         <div className={`pin ${isAnimating ? 'animating' : ''}`}>
-          <LocationOnIcon />
+        
         </div>
         <div className="HeroText">¡Find your perfect trip, designed by insiders who know and love their cities!</div>
         <div className={`pin ${isAnimating ? 'animating' : ''}`}>
-          <LocationOnIcon />
+         
         </div>
       </div>
       <div className='CallToAction'>

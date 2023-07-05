@@ -1,0 +1,54 @@
+.contenedorCities{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100vw;
+    min-height: 70vh;
+    height: auto;
+}
+
+ .titulo{
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(6, 240, 208);
+    font-size: 4em;
+    top:0px;
+    left:40%;
+
+}
+
+
+.tarjeta{
+    width: 250px;
+    height: 300px;
+    border: 2px black solid;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+    
+
+}
+.tarjeta img{
+    width: 100%;
+    height: 100%;
+}
+.tarjeta h2 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.botonDetalles{
+  position: absolute;
+    bottom: 20px ;
+    height: 30px;
+    left:40%;
+    background-color: rgb(6, 200, 235);
+    border-radius: 10px;
+    color: white;
+}
