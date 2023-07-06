@@ -10,7 +10,7 @@ function Cities() {
   const [arrayAfiltrar, setArrayAfiltrar] = useState([]);
 
   async function getData() {
-    const citiesDb = await axios.get("http://localhost:5000/api/cities");
+    const citiesDb = await axios.get("https://johana-api-cities-crud.onrender.com/api/cities");
     setCities(citiesDb.data.response.cities);
     setArrayAfiltrar(citiesDb.data.response.cities);
   }
