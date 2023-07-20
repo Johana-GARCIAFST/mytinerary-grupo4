@@ -41,6 +41,7 @@ function Cities() {
       <div className='contenedorCities'>
         {cities.length > 0 ? 
           cities.map((city, index) => (
+           
             <div className="tarjeta" key={index}>
               <img src={city.image} alt="" />
               <h2>{city.name}</h2>

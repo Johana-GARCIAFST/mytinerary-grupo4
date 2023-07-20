@@ -3,3 +3,13 @@
     top: 80px;
     left: 20px;
 }
+.city-details{
+width: max-content;
+height: fit-content;
+}
+
+.fondo{
+    width: 100%;
+    min-height: 80vw;
+    height: auto;
+}
