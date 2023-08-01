@@ -12,7 +12,7 @@ function Footer(){
         <div className="LinkFooter"><p>Link to Home</p></div>
         <div className="LinkFooter"><p>Link to About us</p></div>
         <div className="LinkFooter"><p>Link to Cities</p></div>
-        <div> &copy; MyTinerary Todos los derechos reservados.
+        <div> &copy; MyTinerary All rights reserved.
         </div>
         </div>
         <div className="SocialMedia">
