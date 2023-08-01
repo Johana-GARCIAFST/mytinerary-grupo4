@@ -55,7 +55,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
             }}
           />
         
-          <Typography
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -63,14 +63,17 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
+              flexDirection:{md:'row'},
+              justifyContent:{md:'flex-end'},
               fontFamily: 'monospace',
               fontWeight: 700,
+              fontSize:'2em',
               letterSpacing: '.3rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

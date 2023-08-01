@@ -1,13 +1,16 @@
+*{
+ text-decoration: none;
+ margin: 0%;
+ padding: 0%;
+}
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
-
-
 
 
 .App-header {
@@ -24,6 +27,14 @@
 .App-link {
   color: #68dcfc;
 }
+
+.appbar{
+  background: linear-gradient(rgb(247, 255, 255) , #04c6fc )!important;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+} 
+
 
 @keyframes App-logo-spin {
   from {

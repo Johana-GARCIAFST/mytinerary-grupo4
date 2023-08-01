@@ -12,4 +12,156 @@ height: fit-content;
     width: 100%;
     min-height: 80vw;
     height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    position: relative;
+}
+.loading{
+    height: 80vw;
+}
+.tituloDetalle{
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgb(6, 237, 245),
+    2px 2px 8px white,
+    2px 2px 10px white;
+    font-family:'DM Sans';
+    color:white
+}
+.contenedorDescription{
+    width: 80%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.459);
+text-align: center;
+}
+.contenedorDescription p{
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+}
+.country{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.country h2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: 2px 2px 3px deeppink;
+}
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    font-size:2em;
+    font-weight: bold;
+    color:black;
+
+}
+
+.itinerary {
+    height: 300px;
+    width: 600px;
+    background-color: rgba(253, 253, 253, 0.979);
+    position:absolute;
+    bottom: 100px;
+    left: 25%;
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.507);
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+.itinerary h2{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    color:black;
+    
+
+}
+.itinerary .author{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5px;
+
+}
+.author img{
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(6, 237, 245);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.438);
+    margin-left: 20px;
+}
+.author p{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.price{
+    width: 100%;
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.price p{
+    margin-right: 20px;
+}
+
+.price img{
+
+    width:40px;
+    height: 100%;
+    margin-right: 5px;
+
+}
+.contentMegusta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.megusta{
+   color: rgb(224, 224, 224);
+    width: 30px !important;
+    filter: drop-shadow(0px 0px 1px black);
+    cursor: pointer;
+    
+    
+}
+.megusta :hover{
+    color: rgb(247, 42, 42);
+}
+.etiquetas{
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
+    color: rgb(105, 105, 105);
+}
+.duration{
+    position: absolute;
+    right: 8px;
+    bottom: 30px;
+   
 }

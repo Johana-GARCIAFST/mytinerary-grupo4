@@ -22,7 +22,7 @@ function Cities() {
 
   const filtered = inputSearch => {
     const resultSearch = arrayAfiltrar.filter(element =>
-      element.name.toLowerCase().startsWith(inputSearch.toLowerCase())
+      element.name.toLowerCase().startsWith(inputSearch.toLowerCase().trim())
     );
     setCities(resultSearch);
   };
@@ -33,8 +33,9 @@ function Cities() {
 
   return (
     <>
+    <div className="contentCities">
       <div>
-        <input type="search" value={search} placeholder="Find your City" onChange={input} />
+        <input className="search" type="search" value={search} placeholder="   Find your City" onChange={input} />
       </div>
 
       <h1 className="titulo">Cities</h1>
@@ -44,7 +45,7 @@ function Cities() {
            
             <div className="tarjeta" key={index}>
               <img src={city.image} alt="" />
-              <h2>{city.name}</h2>
+              <h2 className='tituloTarjeta'>{city.name}</h2>
               <LinkRouter to={'/Details/' + city._id}>
                 <button className="botonDetalles">
                   Details
@@ -55,6 +56,7 @@ function Cities() {
         : 
           <Animation />
         }
+      </div>
       </div>
     </>
   );

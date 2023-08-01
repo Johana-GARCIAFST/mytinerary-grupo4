@@ -33,7 +33,7 @@
   .Hero{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    height: 150px;
   }
   .Slogan{
     display: flex;

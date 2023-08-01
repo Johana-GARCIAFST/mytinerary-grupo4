@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     background: linear-gradient(grey, rgb(55, 55, 55), rgb(13, 13, 13));
-    height: 73px;
+    height: 78px;
 }
 .SocialMedia{
     width: 30%;

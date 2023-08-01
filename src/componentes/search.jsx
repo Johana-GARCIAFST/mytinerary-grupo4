@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../app.css'
 
 const CardFilter = ({ cards }) => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -14,7 +15,7 @@ const CardFilter = ({ cards }) => {
 
   return (
     <div>
-      <input type="text" onChange={handleSearch} placeholder="Search" />
+      <input className='Search' type="text" onChange={handleSearch} placeholder="Search" />
       {filteredCards.map((card) => (
         <div key={card.id}>{card.name}</div>
       ))}
